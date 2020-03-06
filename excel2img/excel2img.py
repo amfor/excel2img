@@ -110,7 +110,7 @@ def export_img(fn_excel, fn_image, page=None, _range=None):
         # rng.Select()              # cannot-use-the-rangecopypicture-method-to-copy-the/8bb3ef11-51c0-4fb1-9a8b-0d062bde582b?auth=1
         
         # See http://stackoverflow.com/a/42465354/1924207
-        for shape in rng.parent.Shapes: pass
+        for shape in rng.Parent.Shapes: pass
 
         xlScreen, xlPrinter = 1, 2
         xlPicture, xlBitmap = -4147, 2
